@@ -4,37 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard de Sensores</title>
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mqtt/4.2.8/mqtt.min.js"></script>
 </head>
 <body>
     <h1>Dashboard de Sensores</h1>
-    <div class="sensor-container">
-        <div class="sensor">
-            <h2>Temperatura Externa</h2>
-            <p id="temp_externa">-- °C</p>
-        </div>
-        <div class="sensor">
-            <h2>Luz</h2>
-            <p id="luz">-- Lux</p>
-        </div>
-        <div class="sensor">
-            <h2>Temperatura Placa</h2>
-            <p id="temp_placa">-- °C</p>
-        </div>
-        <div class="sensor">
-            <h2>Humedad Placa</h2>
-            <p id="humedad_placa">-- %</p>
-        </div>
-        <div class="sensor">
-            <h2>Presión</h2>
-            <p id="presion">-- Pa</p>
-        </div>
-        <div class="sensor">
-            <h2>Movimiento</h2>
-            <p id="movimiento">--</p>
-        </div>
+    
+    <div class="sensor">
+        <h2>Temperatura Externa</h2>
+        <p id="tempExt">-- °C</p>
     </div>
-    <script src="script.js"></script>
+
+    <div class="sensor">
+        <h2>Luz</h2>
+        <p id="luz">-- Lux</p>
+    </div>
+
+    <div class="sensor">
+        <h2>Temperatura Placa</h2>
+        <p id="tempPlaca">-- °C</p>
+    </div>
+
+    <div class="sensor">
+        <h2>Humedad Placa</h2>
+        <p id="humPlaca">-- %</p>
+    </div>
+
+    <div class="sensor">
+        <h2>Presión</h2>
+        <p id="presion">-- Pa</p>
+    </div>
+
+    <div class="sensor">
+        <h2>Movimiento</h2>
+        <p id="movimiento">--</p>
+    </div>
+
+   <script src="script.js?v=2"></script>
 </body>
 </html>
+
