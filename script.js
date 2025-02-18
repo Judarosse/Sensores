@@ -1,4 +1,4 @@
-const broker = "ws://192.168.1.8:9001"; // WebSockets en el puerto correcto
+const broker = "ws://192.168.1.5:9001"; // WebSockets en el puerto correcto
 const topic = "sensores/datos"; // Asegúrate de que coincide con el topic de la RPi
 
 const client = mqtt.connect(broker);
